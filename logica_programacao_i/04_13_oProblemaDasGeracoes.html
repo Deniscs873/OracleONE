@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var ano = 1500;
+    var anoAtual = 2022;
+    var media = 28;
+
+    mostra("A média de gerações por casal desde " + ano + " até o atual é de " + Math.round((anoAtual - ano)/media));
+</script>
