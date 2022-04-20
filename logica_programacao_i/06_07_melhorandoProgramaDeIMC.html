@@ -23,23 +23,26 @@
     mostra(" o IMC do Denis é " + imcDenis);
     
     var nomeAmigo = prompt("Informe seu nome");
-    var pesoAmigo = prompt(nomeAmigo + ", informe seu peso");
-    var alturaAmigo = prompt(nomeAmigo + ", informe sua altura");
+    var pesoAmigo = prompt(nomeAmigo + ", informe seu peso em kg");
+    var alturaAmigo = prompt(nomeAmigo + ", informe sua altura em m");
 
     var imcAmigo = calculaImc(pesoAmigo, alturaAmigo);
 
-    mostra(" o IMC do " + nomeAmigo + " é "+ imcAmigo)
-    alert("O IMC do " + nomeAmigo + " é "+ imcAmigo)
-    /*
-    var pesoAmigo2 = 61;
-    var alturaAmigo2 = 1.75;
+    mostra(" o IMC do " + nomeAmigo + " é "+ imcAmigo);
+    
+    
 
-    var imcAmigo2 = calculaImc(pesoAmigo2, alturaAmigo2);
+    if(imcAmigo < 18.5){
+        mostra("Você está abaixo do recomendado");
+    }
+    
+    if(imcAmigo > 35){
+        mostra("Você está acima do recomendado");
+        alert("O IMC do " + nomeAmigo + " é "+ imcAmigo + " ele está acima do recomendado!");
+    }
 
-    mostra(" o IMC do Amigo2 é "+ imcAmigo2);
-
-    var totalImc = imcDenis + imcAmigo + imcAmigo2;
-    mostra("A soma dos IMC's é " + totalImc);
-    */
+    if(imcAmigo >= 18.5 && imcAmigo <= 35){
+        mostra("Seu IMC está excelente")
+    }
 
 </script>
